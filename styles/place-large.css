@@ -1,0 +1,46 @@
+@media (min-width: 1024px) {
+    section {
+        position: absolute;
+
+        background-color: whitesmoke;
+        width: 300px;
+    }
+
+    #section1 {
+        top: 150px;
+        left: 50px;
+    }
+
+    #section2 {
+        top: 450px;
+        right: 50px;
+    }
+
+    #section2 img {
+        display: none;
+    }
+
+    header {
+        border-bottom: 5px solid #FEBE10;
+    }
+
+    section h2 {
+        background-color: #FEBE10;
+        width: 70%;
+        padding: 10px;
+        position: relative;
+        top: 0;
+        left: -50px;
+    }
+
+    .weather-icon::after {
+        content: "🌞"; 
+        display: inline-block;
+        font-size: 24px; 
+        margin-left: 20px;
+    }
+
+    #image-small {
+        border-bottom: none;
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals My Country - Eric Kodzi">
+    <meta name="author" content="Eric Kodzi">
+    <title>WDD 131 - Dynamic Web Fundamentals - Eric Kodzi</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Ghana</h1>
+        </header>
+        <main>
+            <picture>
+                <source srcset="images/ghana-beach.webp" media="(min-width: 1024px)">
+                <img id="image-small" src="images/cocoa-tree.webp" alt="cocoa-tree" width="300" >
+            </picture>
+            <section id="section1">
+                <h2>Data</h2>
+                <ul>
+                    <li><b>Area: </b><span>  238,535 sq km</span></li>
+                    <li><b>Population: </b><span>  31 million people</span></li>
+                    <li><b>Capital: </b><span>  Accra</span></li>
+                    <li><b>Currency: </b><span>  GHS</span></li>
+                    <li><b>Languages: </b><span>  English,Twi,Ewe</span></li>
+                    <li><b>TimeZone: </b><span>  GMT</span></li>
+                    <li><b>Calling Code: </b><span>  +233</span></li>
+                    <li><b>Internet TLD: </b><span>  .gh</span></li>
+                </ul>
+            </section>
+            <section id="section2">
+                <h2 class="weather-icon">Weather</h2>
+                <img src="images/cloudy.png" alt="weather-icon" width="80" height="80">
+                <ul>
+                    <li><b>Temparature:</b><span> 10 C</span></li>
+                    <li><b>Conditions:</b><span> Partly Cloudy</span></li>
+                    <li><b>Wind:</b><span> 5 km/h</span></li>
+                    <li><b>Wind Chill:</b><span id="windChill"></span></li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p> &copy; <span id="currentyear"></span> Eric Kodzi - Ghana</p>
+            <p>Last Modification: <span id="modified"></span></p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,3 +1,9 @@
+:root {
+    --background-primary: #00674b;
+    --background-secondary: gold;
+  }
+  
+
 body {
     margin: 0;
     padding: 0;
@@ -12,11 +18,11 @@ body {
 }
 
 header {
-    background: #00674b;
+    background: var(--background-primary);
     color: white;
     padding: 20px;
     text-align: center;
-    border-bottom: 8px solid gold;
+    border-bottom: 8px solid var(--background-secondary);
 }
 
 section {
@@ -52,11 +58,11 @@ section ul li span {
 #image-small {
     width: 100%;
     height: auto;
-    border-bottom: 8px solid #00674b;
+    border-bottom: 8px solid var(--background-primary);
 }
 
 footer {
-    background-color: #00674b;
+    background-color: var(--background-primary);
     color: white;
     text-align: center;
     padding: 20px;

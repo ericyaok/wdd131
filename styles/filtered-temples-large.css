@@ -1,0 +1,41 @@
+@media (min-width: 774px) {
+    .hamburger-menu {
+        display: none;
+        cursor: pointer;
+    }
+
+    nav {
+        display: block;
+        position:static;
+        right: 0;
+        top: 83px;
+        background-color: inherit;
+        width: 50%;
+    
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0;
+    }
+    
+    nav ul li {
+        margin: 10px;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    nav ul li a:hover {
+        color: #1A4D2E;
+        background-color: white;
+        /* padding: 10px; */
+    }
+}

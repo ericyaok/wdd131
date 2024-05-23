@@ -1,0 +1,70 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    text-align: center;
+    background-color: #002D62;
+    color: white;
+}
+
+main {
+    display: grid;
+    justify-items: center;
+}
+
+.rform {
+    border-radius: 5px;
+    margin: auto 0;
+    background-color: #F0F8FF;
+    width: 100%;
+}
+
+input[type=text],input[type=date],select,textarea{
+    display: block;
+    width: 100%;
+    max-width: 425px;
+}
+
+.features label {
+    display: block;
+}
+
+fieldset {
+    border: none;
+    margin: 5px;
+}
+
+input[type=submit]{
+    padding: 5px;
+    width: 100%;
+    color: #002D62;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.rating label {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2%;
+}
+
+#counter {
+    font-size: 2rem;
+    color: #002D62;
+}
+
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals Product Review Form - Eric Kodzi">
+    <meta name="author" content="Eric Kodzi">
+    <title>WDD 131 - Dynamic Web Fundamentals - Eric Kodzi</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Product Review</h1>
+
+        </header>
+        <main>
+            <form action="review.html" method="get" class="rform">
+                <fieldset>
+                    <label for="selectprod">Product Name
+                        <select name="selectprod" id="selectprod" required>
+                            <option value="" disabled selected>Select a Product</option>
+
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <div class="rating">
+                        Overall Rating
+                        <label for="one">&star;<input type="radio" id="one" name="rating" value="1" required></label>
+                        <label for="two">&star;&star;<input type="radio" id="two" name="rating" value="2"
+                                required></label>
+                        <label for="three">&star;&star;&star;<input type="radio" id="three" name="rating" value="3"
+                                required></label>
+                        <label for="four">&star;&star;&star;&star;<input type="radio" id="four" name="rating" value="4"
+                                required></label>
+                        <label for="five">&star;&star;&star;&star;&star;&star;<input type="radio" id="five"
+                                name="rating" value="5" required></label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <label for="date">Date of installation<input type="date" name="date" id="date" required></label>
+                </fieldset>
+                <fieldset>
+                    <div class="features">
+                        Which useful features did you find in the product?
+                        (Check all that apply)
+                        <label for="feature1"><input type="checkbox" id="feature1" name="feature1"
+                                value="">Durability</label>
+                        <label for="feature2"><input type="checkbox" id="feature2" name="feature2" value="">Ease of
+                            use</label>
+                        <label for="feature3"><input type="checkbox" id="feature3" name="feature3"
+                                value="">Performcane</label>
+                        <label for="feature4"><input type="checkbox" id="feature4" name="feature4"
+                                value="">Design</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <label for="wreview">Written review(Optional)<textarea name="wreview"
+                            id="wreview"></textarea></label>
+                </fieldset>
+                <fieldset>
+                    <label for="name">Name(Optional) <input type="text" id="name" name="name"></label>
+                </fieldset>
+
+                <input type="submit" value="Post Review" id="reviewButton">
+            </form>
+        </main>
+        <footer>
+            <p> &copy; <span id="currentyear"></span> Eric Kodzi - Ghana</p>
+            <p>Last Modification: <span id="modified"></span></p>
+        </footer>
+    </div>
+</body>
+
+</html>

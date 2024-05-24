@@ -53,28 +53,23 @@ if (selectElement) {
 }
 
 
-// Function to get the counter value from local storage
+
 function getCounter() {
     return parseInt(localStorage.getItem('reviewCounter')) || 0;
 }
 
-// Function to save the counter value to local storage
+
 function saveCounter(value) {
     localStorage.setItem('reviewCounter', value);
 }
 
-let counter = getCounter(); // Initialize counter with the value from local storage
+let counter = getCounter(); 
 
-// Get references to the button and the counter display
+
 const reviewButton = document.getElementById('reviewButton');
-// const counterDisplay = document.getElementById('counter');
 
-// Display the initial counter value
-// counterDisplay.textContent = counter;
 
-// Add click event listener to the review button
 reviewButton.addEventListener('click', () => {
-    counter++; // Increment the counter
-    // counterDisplay.textContent = counter; // Update the displayed counter value
-    saveCounter(counter); // Save the updated counter value to local storage
+    counter++; 
+    saveCounter(counter); 
 });

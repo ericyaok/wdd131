@@ -1,4 +1,8 @@
 @media (min-width: 774px) {
+    body{
+        font-size: 1.8rem;
+    }
+    
     #hamburger-menu {
         display: none;
         cursor: pointer;
@@ -7,7 +11,7 @@
     nav {
         display: block;
         position:static;
-        width: 50%;
+        width: 40%;
     
     }
     
@@ -27,7 +31,10 @@
     }
 
     nav ul li a:hover {
-        background-color: white;
-        
+        background-color: white;   
+    }
+
+    header span {
+        font-size: 3rem;
     }
 }

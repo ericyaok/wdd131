@@ -37,15 +37,13 @@ jokes = [
 // Retrieve jokes from local storage
 const jokesString = localStorage.getItem('localjokes');
 const localjokes = JSON.parse(jokesString);
-console.log(localjokes.length)
+console.log(localjokes)
 
 if (localjokes.length > 0) {
     localjokes.forEach(joke => {
         jokes.push(joke);
     });
 }
-
-
 
 
 function getRandomJoke() {

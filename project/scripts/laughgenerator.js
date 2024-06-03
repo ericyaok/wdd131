@@ -37,9 +37,13 @@ jokes = [
 // Retrieve jokes from local storage
 const jokesString = localStorage.getItem('localjokes');
 const localjokes = JSON.parse(jokesString);
-localjokes.forEach(joke => {
-    jokes.push(joke);
-});
+
+if (localjokes) {
+    localjokes.forEach(joke => {
+        jokes.push(joke);
+    });
+}
+
 
 
 

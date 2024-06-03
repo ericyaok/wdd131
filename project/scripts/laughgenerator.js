@@ -36,10 +36,10 @@ jokes = [
 
 // Retrieve jokes from local storage
 const jokesString = localStorage.getItem('localjokes') || [];
-const localjokes = JSON.parse(jokesString);
-console.log(localjokes)
+console.log(jokesString)
 
-if (localjokes.length > 0) {
+if (jokesString.length > 0) {
+    const localjokes = JSON.parse(jokesString);
     localjokes.forEach(joke => {
         jokes.push(joke);
     });

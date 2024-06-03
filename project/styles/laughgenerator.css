@@ -1,0 +1,124 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #6CB4EE;
+    padding: 15px 10px;
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+}
+
+header span {
+    font-size: 1.5rem;
+}
+
+nav {
+    display: none;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    display: grid;
+    place-items: center;
+}
+
+main #joke-container {
+    width: 60%;
+    border: 1px solid #D3D3D3;
+    padding: 30px;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+}
+
+main section button {
+    margin-top: 70px;
+}
+
+main section span {
+    color: gray;
+}
+
+#all-jokes {
+    margin: 30px 0;
+}
+
+#all-jokes p {
+    margin: 0;
+}
+
+#all-jokes div {
+    margin: 14px;
+}
+
+footer p {
+    margin: 0;
+    padding: 25px;
+    background-color: #6CB4EE;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea,
+button {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #6CB4EE;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6CB4EE;
+}
+
+#hamburger-menu {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+}
